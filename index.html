@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Interactive Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript Interactivity Demo</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Section -->
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <p>Clicks: <span id="counter">0</span></p>
+      <button id="incrementBtn">Increase</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>❓ FAQ Section</h2>
+      <div class="faq">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer">JavaScript is a programming language for the web.</p>
+      </div>
+      <div class="faq">
+        <h3 class="faq-question">What is DOM?</h3>
+        <p class="faq-answer">DOM stands for Document Object Model, a way to interact with HTML.</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>📋 Signup Form</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" required>
+          <span class="error" id="nameError"></span>
+        </label>
+        <br>
+        <label>
+          Email:
+          <input type="text" id="email" required>
+          <span class="error" id="emailError"></span>
+        </label>
+        <br>
+        <label>
+          Password:
+          <input type="password" id="password" required>
+          <span class="error" id="passwordError"></span>
+        </label>
+        <br>
+        <button type="submit">Sign Up</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
